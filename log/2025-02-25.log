@@ -1,0 +1,43 @@
+2025-02-25T18:13:08	HTTP API on port 8001
+2025-02-25T18:13:13	[; 'api',; 'user',; 'read',; {; city: [AsyncFunction (anonymous)],; country: [AsyncFunction (anonymous)],; user: [AsyncFunction (anonymous)]; }; ]
+2025-02-25T18:13:19	HTTP API on port 8001
+2025-02-25T18:13:32	[; 'api',; 'user',; 'read',; {; city: [AsyncFunction (anonymous)],; country: [AsyncFunction (anonymous)],; user: [AsyncFunction (anonymous)]; }; ]
+2025-02-25T18:15:25	HTTP API on port 8001
+2025-02-25T18:15:28	[; 'api',; 'user',; 'read',; {; city: [AsyncFunction (anonymous)],; country: [AsyncFunction (anonymous)],; user: [AsyncFunction (anonymous)]; }; ]
+2025-02-25T18:16:39	HTTP API on port 8001
+2025-02-25T18:16:44	[; 'api',; 'user',; 'read',; {; city: {; query: [AsyncFunction: query],; read: [AsyncFunction: read],; create: [AsyncFunction: create],; update: [AsyncFunction: update],; delete: [AsyncFunction: delete]; },; country: { read: [AsyncFunction: read], find: [AsyncFunction: find] },; user: {; read: [AsyncFunction: read],; create: [AsyncFunction: create],; update: [AsyncFunction: update],; delete: [AsyncFunction: delete],; find: [AsyncFunction: find]; }; }; ]
+2025-02-25T18:16:44	src async read(id) {; return await db('users').read(id, ['id', 'login']);; }
+2025-02-25T18:16:44	::1 read /api/user/read
+2025-02-25T18:16:44	res Result {; command: 'SELECT',; rowCount: 5,; oid: null,; rows: [; { id: '1', login: 'admin' },; { id: '2', login: 'marcus' },; { id: '3', login: 'user' },; { id: '4', login: 'iskandar' },; { id: '5', login: 'Jenya' }; ],; fields: [; Field {; name: 'id',; tableID: 17248,; columnID: 1,; dataTypeID: 20,; dataTypeSize: 8,; dataTypeModifier: -1,; format: 'text'; },; Field {; name: 'login',; tableID: 17248,; columnID: 2,; dataTypeID: 1043,; dataTypeSize: -1,; dataTypeModifier: -1,; format: 'text'; }; ],; _parsers: [ [Function: parseBigInteger], [Function: noParse] ],; _types: TypeOverrides {; _types: {; getTypeParser: [Function: getTypeParser],; setTypeParser: [Function: setTypeParser],; arrayParser: [Object],; builtins: [Object]; },; text: {},; binary: {}; },; RowCtor: null,; rowAsArray: false,; _prebuiltEmptyResultObject: { id: null, login: null }; }
+2025-02-25T18:17:18	HTTP API on port 8001
+2025-02-25T18:17:20	::1 read /api/user/read
+2025-02-25T18:17:20	res Result {; command: 'SELECT',; rowCount: 5,; oid: null,; rows: [; { id: '1', login: 'admin' },; { id: '2', login: 'marcus' },; { id: '3', login: 'user' },; { id: '4', login: 'iskandar' },; { id: '5', login: 'Jenya' }; ],; fields: [; Field {; name: 'id',; tableID: 17248,; columnID: 1,; dataTypeID: 20,; dataTypeSize: 8,; dataTypeModifier: -1,; format: 'text'; },; Field {; name: 'login',; tableID: 17248,; columnID: 2,; dataTypeID: 1043,; dataTypeSize: -1,; dataTypeModifier: -1,; format: 'text'; }; ],; _parsers: [ [Function: parseBigInteger], [Function: noParse] ],; _types: TypeOverrides {; _types: {; getTypeParser: [Function: getTypeParser],; setTypeParser: [Function: setTypeParser],; arrayParser: [Object],; builtins: [Object]; },; text: {},; binary: {}; },; RowCtor: null,; rowAsArray: false,; _prebuiltEmptyResultObject: { id: null, login: null }; }
+2025-02-25T18:18:02	HTTP API on port 8001
+2025-02-25T18:18:06	::1 read /api/user/read
+2025-02-25T18:18:31	HTTP API on port 8001
+2025-02-25T18:18:33	::1 read /api/user/read 
+2025-02-25T18:19:07	HTTP API on port 8001
+2025-02-25T18:19:09	args [ undefined ]
+2025-02-25T18:19:09	::1 read /api/user/read
+2025-02-25T18:29:41	HTTP API on port 8001
+2025-02-25T18:29:47	bodu { args: [ '1' ] }
+2025-02-25T18:29:47	args [ undefined ]
+2025-02-25T18:29:47	::1 read /api/user/read
+2025-02-25T18:31:31	HTTP API on port 8001
+2025-02-25T18:31:38	bodu { args: [ '1' ] }
+2025-02-25T18:31:38	args [ '1' ]
+2025-02-25T18:31:38	::1 read /api/user/read
+2025-02-25T18:33:17	HTTP API on port 8001
+2025-02-25T18:33:21	args [ '2' ]
+2025-02-25T18:33:21	::1 read /api/user/read
+2025-02-25T18:39:11	WS API on port 8001
+2025-02-25T18:39:44	WS API on port 8001
+2025-02-25T18:39:48	::1 user.read("2")
+2025-02-25T18:46:29	WS API on port 8001
+2025-02-25T18:47:40	WS API on port 8001
+2025-02-25T18:47:44	::1 user.read("2")
+2025-02-25T18:47:52	WS API on port 8001
+2025-02-25T18:48:03	WS API on port 8001
+2025-02-25T18:48:16	HTTP API on port 8001
+2025-02-25T18:48:19	args [ '2' ]
+2025-02-25T18:48:19	::1 read /api/user/read

@@ -1,3 +1,5 @@
+'use strict';
+
 const fs = require('node:fs');
 const util = require('node:util');
 const path = require('node:path');
@@ -51,6 +53,7 @@ class Logger {
   }
 
   error(...args) {
+    console.log(args);
     const msg = util.format(...args).replace(/[\n\r]{2,}/g, '\n');
     this.write('error', msg.replace(this.regexp, ''));
   }

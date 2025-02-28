@@ -1,24 +1,31 @@
-({
+'use strict';
+
+const common = { hash: require('../hash.js') };
+const db = require('../db.js');
+const users = db.crud('users');
+
+module.exports = {
   async read(id) {
-    return await db('users').read(id, ['id', 'login']);
+    console.log('id', id);
+    return users.read(id[0], ['id', 'login']);
   },
 
   async create({ login, password }) {
     const passwordHash = await common.hash(password);
-    return await db('users').create({ login, password: passwordHash });
+    return users.create({ login, password: passwordHash });
   },
 
   async update(id, { login, password }) {
     const passwordHash = await common.hash(password);
-    return await db('users').update(id, { login, password: passwordHash });
+    return users.update(id, { login, password: passwordHash });
   },
 
   async delete(id) {
-    return await db('users').delete(id);
+    return users.delete(id);
   },
 
   async find(mask) {
     const sql = 'SELECT login from users where login like $1';
-    return await db('users').query(sql, [mask]);
+    return users.query(sql, [mask]);
   },
-});
+};

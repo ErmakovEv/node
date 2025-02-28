@@ -2,7 +2,7 @@
 
 const { Server } = require('ws');
 
-module.exports = (routing, port) => {
+module.exports = (routing, port, console) => {
   const ws = new Server({ port });
 
   ws.on('connection', (connection, req) => {
@@ -33,5 +33,5 @@ module.exports = (routing, port) => {
     });
   });
 
-  console.log(`API on port ${port}`);
+  console.log(`WS API on port ${port}`);
 };

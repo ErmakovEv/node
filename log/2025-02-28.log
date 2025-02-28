@@ -1,0 +1,5 @@
+2025-02-28T20:00:09	Static on port 8000
+2025-02-28T20:00:09	HTTP API on port 8001
+2025-02-28T20:01:18	Static on port 8000
+2025-02-28T20:01:18	HTTP API on port 8001
+2025-02-28T20:01:33	::1 read /api/user/read
